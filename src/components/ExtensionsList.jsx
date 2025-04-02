@@ -1,6 +1,6 @@
 import React from "react";
 import ExtensionCards from "./ExtensionCards";
-import extensions from "../../public/data.json";
+import extensions from "../data.json";
 const ExtensionsList = () => {
   return (
     <div className="container mx-auto w-full ">

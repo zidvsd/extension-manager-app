@@ -10,10 +10,10 @@
   --color-800: hsl(226, 25%, 17%);
   --color-700: hsl(225, 23%, 24%);
   --color-600: hsl(226, 11%, 37%);
-  --color-300: hsl(0, 0%, 78%);
-  --color-200: hsl(217, 61%, 90%);
-  --color-100: hsl(0, 0%, 93%);
-  --color-0: hsl(200, 60%, 99%);
+  --color-neutralCustom-300: hsl(0, 0%, 78%);
+  --color-neutralCustom-200: hsl(217, 61%, 90%);
+  --color-neutralCustom-100: hsl(0, 0%, 93%);
+  --color-neutralCustom-0: hsl(200, 60%, 99%);
   --color-light-gradient: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
   --color-dark-gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
   --color-redCustom-400: hsl(3, 86%, 64%);
