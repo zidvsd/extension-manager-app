@@ -7,7 +7,7 @@ const DarkModeToggle = () => {
 
   return (
     <button
-      className="px-4 py-2 rounded bg-100 dark:bg-700"
+      className="object-contain p-3 hover:opacity-50 transition duration-200 ease-in-out cursor-pointer rounded-xl bg-100 dark:bg-700"
       onClick={() => setDarkMode(!darkMode)}
     >
       <img src={darkMode ? iconSun : iconMoon} alt="" />
