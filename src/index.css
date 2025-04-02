@@ -1,35 +1,49 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
 
 @theme {
   --font-noto: 'Noto Sans', 'sans-serif';
-
-  --neutral: {
-    900: 'hsl(227, 75%, 14%)',
-      800: 'hsl(226, 25%, 17%)',
-      700: 'hsl(225, 23%, 24%)',
-      600: 'hsl(226, 11%, 37%)',
-      300: 'hsl(0, 0%, 78%)',
-      200: 'hsl(217, 61%, 90%)',
-      100: 'hsl(0, 0%, 93%)',
-      0: 'hsl(200, 60%, 99%)',
-  }
-
-  --red: {
-    400: 'hsl(3, 86%, 64%)',
-      500: 'hsl(3, 71%, 56%)',
-      700: 'hsl(3, 77%, 44%)',
-  }
+  --breakpoint-2xl: 90rem;
+  --color-blackCustom: hsl(227, 75%, 14%);
+  --color-chocolate: #B6563c;
+  --color-900: hsl(227, 75%, 14%);
+  --color-800: hsl(226, 25%, 17%);
+  --color-700: hsl(225, 23%, 24%);
+  --color-600: hsl(226, 11%, 37%);
+  --color-300: hsl(0, 0%, 78%);
+  --color-200: hsl(217, 61%, 90%);
+  --color-100: hsl(0, 0%, 93%);
+  --color-0: hsl(200, 60%, 99%);
+  --color-light-gradient: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+  --color-dark-gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
 }
 
-.light-gradient {
+/* Define your light gradient */
+.lightCustom-gradient {
   background: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
 }
 
-.dark-gradient {
+/* Define your dark gradient */
+.darkCustom-gradient {
   background: linear-gradient(180deg, #040918 0%, #091540 100%);
 }
 
-body {
-  background-color: black;
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Common styles */
+html {
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  transition: background 0.3s ease;
+}
+
+/* Light mode gradient */
+html {
+  background: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+}
+
+/* Dark mode gradient */
+html.dark {
+  background: linear-gradient(180deg, #040918 0%, #091540 100%);
 }

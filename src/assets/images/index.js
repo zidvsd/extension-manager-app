@@ -1,0 +1,16 @@
+export { default as favicon } from "./favicon-32x32.png";
+export { default as iconMoon } from "./icon-moon.svg";
+export { default as iconSun } from "./icon-sun.svg";
+export { default as logo } from "./logo.svg";
+export { default as logoConsolePlus } from "./logo-console-plus.svg";
+export { default as logoDevlens } from "./logo-devlens.svg";
+export { default as logoDomSnapshot } from "./logo-dom-snapshot.svg";
+export { default as logoGridGuides } from "./logo-grid-guides.svg";
+export { default as logoJsonWizard } from "./logo-json-wizard.svg";
+export { default as logoLinkChecker } from "./logo-link-checker.svg";
+export { default as logoMarkupNotes } from "./logo-markup-notes.svg";
+export { default as logoPalettePicker } from "./logo-palette-picker.svg";
+export { default as logoSpeedBoost } from "./logo-speed-boost.svg";
+export { default as logoStyleSpy } from "./logo-style-spy.svg";
+export { default as logoTabMasterPro } from "./logo-tab-master-pro.svg";
+export { default as logoViewportBuddy } from "./logo-viewport-buddy.svg";
