@@ -1,37 +1,39 @@
-import React, { useState } from "react";
+import React from "react";
 import Button from "./Button";
-import extensionsData from "../data.json";
 
-const ExtensionCards = () => {
-  const [extensions, setExtensions] = useState(extensionsData);
-
-  const removeExtension = (index) => {
-    const updatedExtensions = extensions.filter((_, i) => i !== index);
-    setExtensions(updatedExtensions);
-  };
-
+const ExtensionCards = ({ extensions, removeExtension, toggleActive }) => {
   return (
     <>
       {extensions.map((extension, index) => (
         <div
           key={index}
-          className="dark:text-white text-900 border shadow-md p-4 rounded-xl border-700 dark:shadow-none dark:border-neut flex h-50 flex-col bg-white dark:bg-800"
+          className="dark:text-white text-900 border shadow-md p-4 rounded-xl bg-white dark:bg-800 h-52 flex flex-col"
         >
-          <div className="flex-row flex justify-start items-start gap-x-4">
-            <img src={extension.logo} alt="" />
-            <div className="flex flex-col justify-start items-start gap-y-2">
-              <h1 className="font-bold text-xl"> {extension.name}</h1>
-              <p className="text-600 dark:text-300">{extension.description}</p>
+          {/* Content */}
+          <div className="flex-grow">
+            <div className="flex flex-row items-start gap-x-4">
+              <img src={extension.logo} alt="" className="w-10 h-10" />
+              <div className="flex flex-col">
+                <h1 className="font-bold text-xl">{extension.name}</h1>
+                <p className="text-600 dark:text-300">
+                  {extension.description}
+                </p>
+              </div>
             </div>
           </div>
+
+          {/* Buttons pushed to the bottom */}
           <div className="flex flex-row justify-between items-center mt-auto">
             <button
-              className="border-600 px-4 py-2 rounded-full border-1 cursor-pointer hover:border-redCustom-700 hover:bg-redCustom-700 hover:text-white transition-all duration-200 ease-in-out"
-              onClick={() => removeExtension(index)} // Remove extension on click
+              className="border-600 px-4 py-2 rounded-full border cursor-pointer hover:border-redCustom-700 hover:bg-redCustom-700 hover:text-white transition-all"
+              onClick={() => removeExtension(index)}
             >
               Remove
             </button>
-            <Button isActive={extension.isActive} />
+            <Button
+              isActive={extension.isActive}
+              toggle={() => toggleActive(index)}
+            />
           </div>
         </div>
       ))}
