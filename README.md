@@ -66,9 +66,7 @@
         <li>Write tests if applicable.</li>
         <li>Submit a pull request.</li>
     </ol>
-    <h2>License</h2>
-    <p>This project is licensed under the MIT License - see the <a href="LICENSE" target="_blank">LICENSE</a> file for details.</p>
     <h2>Contact</h2>
-    <p>For any questions or feedback, please open an issue in the repository or contact us at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+    <p>For any questions or feedback, please open an issue in the repository or contact us at <a href="mailto:your-email@example.com">rashidvisda@gmail.com</a>.</p>
 </body>
 </html>
