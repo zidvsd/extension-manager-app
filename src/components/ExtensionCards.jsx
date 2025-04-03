@@ -7,7 +7,7 @@ const ExtensionCards = ({ extensions, removeExtension, toggleActive }) => {
       {extensions.map((extension, index) => (
         <div
           key={index}
-          className="dark:text-white text-900 border shadow-md p-4 rounded-xl bg-white dark:bg-800 h-52 flex flex-col"
+          className="dark:text-white text-900 border border-neutralCustom-300 shadow-xl p-4 rounded-xl bg-white dark:bg-800 h-52 flex flex-col dark:border-neutral-700 dark:shadow-none"
         >
           {/* Content */}
           <div className="flex-grow">

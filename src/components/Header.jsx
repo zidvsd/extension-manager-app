@@ -3,7 +3,7 @@ import logo from "../assets/images/logo.svg";
 import DarkModeToggle from "./DarkModeToggle";
 const Header = () => {
   return (
-    <div className="mx-auto  container  rounded-2xl bg-white items-center flex justify-between flex-row p-4 border-2 border-neutralCustom-100 dark:bg-800 dark:border-none">
+    <div className="mx-auto  container shadow-xl  rounded-2xl bg-white items-center flex justify-between flex-row p-4 border-2 border-neutralCustom-300 dark:bg-800 dark:border-none">
       <svg
         className="dark:fill-white"
         xmlns="http://www.w3.org/2000/svg"
