@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+    <h1>🌐 Live Demo </h1>
+    <p>Check it out on Vercel: https://extension-manager-app.vercel.app/ </p>     
     <h1>Browser Extension Manager</h1>
     <p>A powerful and intuitive tool for managing browser extensions. This manager allows users to toggle extensions between active and inactive states, filter extensions, remove unwanted extensions, and customize their interface experience.</p>
     <h2>Features</h2>
